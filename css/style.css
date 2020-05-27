@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+body{
+    display: grid;
+    grid-template-rows: 10vh 85vh 5vh;
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*header*/
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font: bolder 5vh arial;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    width: 100vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font: bolder 2vh/5vh arial;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+a:hover{
+    color: gold;
+}
+/*main*/
+main{
+    height: 85vh;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+@media Screen and (min-device-width:1000px){
+    
+
+    /*function*/
+    .informations{
+        width: 1000px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.575);
+        border: solid 0.2vh black;
+        border-radius: 20px;
+        padding-top: 25px;
+    }
+    .search{
+        width: 550px;
+        height: 70px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    .titleSong{
+        width: 100%;
+        height: 70px;
+        margin-bottom: 5px;
+        text-align: center;
+        font: bolder 2vh arial;
+    }
+    .info{
+        width: 100%;
+        height: 470px;
+        margin-bottom: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        font: bolder 15px arial;
+    }
+    .lyrics{
+        width: 100%;
+        height: 400px;
+        overflow: auto;
+        padding: 10px;
+        text-align: center;
+        font: bolder 15px arial;
+    }
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: #0000008e; 
+            
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgb(211, 137, 0);
+            background: rgb(255, 217, 0); 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(255, 217, 0); 
+        }
+        
+        .erro{
+            margin-top: 50px;
+            color: rgb(138, 0, 0);
+        }
+    /* search*/
+
+    .textInput{
+        width: 200px;
+        height: 50px;
+        border: solid 2px black;
+        border-radius: 20px;
+        padding-left: 10px;
+        color: black;
+        font: bolder 2vh arial;
+        
+    }
+    ::-webkit-input-placeholder{
+        color: grey;
+        font: bolder 2vh arial;
+        text-align: center;
+    }
+    .btnConfirm{
+        width: 90px;
+        height: 40px;
+        border: solid 2px white;
+        border-radius: 20px;
+        font: bolder 2vh arial;
+        background-color: skyblue;
+        color: white;
+    }
+    .btnConfirm:hover{
+        border: solid 2px skyblue;
+        background-color: white;
+        color: skyblue;
+        cursor: pointer;
+    }
+}
+@media Screen and (max-device-width:780px){
+    .informations{
+        width: 90%;
+        height: 95%;
+        background-color: rgba(255, 255, 255, 0.589);
+        border: solid 2px black;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .search{
+        width: 100%;
+        height: initial;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .titleSong{
+        width: 100%;
+        height: 70px;
+        margin-bottom: 5px;
+        text-align: center;
+        font: bolder 2vh arial;
+    }
+    .info{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+        font: bolder 15px arial;
+    }
+    .lyrics{
+        width: 100%;
+        height: 250px;
+        overflow: auto;
+        padding: 10px;
+        text-align: center;
+        font: bolder 15px arial;
+    }
+    /* search*/
+
+    .textInput{
+        width: 100%;
+        border: none;
+        border-bottom: solid 2px black;
+        padding-left: 10px;
+        color: black;
+        background-color: transparent;
+        font: bolder 26px arial;
+        margin-bottom: 20px;
+        
+    }
+    ::-webkit-input-placeholder{
+        color: grey;
+        font: bolder 2vh arial;
+        text-align: center;
+    }
+    .btnConfirm{
+        width:  auto;
+        border: solid 2px white;
+        border-radius: 10px;
+        font: bolder 26px arial;
+        background-color: skyblue;
+        color: white;
+    }
+}
