@@ -41,7 +41,7 @@ function showLyrics(song, artist, lyric){
     if (lyric.lyrics !== undefined){
         document.querySelector(".lyrics").innerText = lyric.lyrics;
     }else{
-        document.querySelector(".lyrics").innerText = "A música não possui letra...";
+        document.querySelector(".lyrics").innerText = "Letra da musica não encontrada...";
     }
 }
 
