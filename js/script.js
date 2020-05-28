@@ -1,7 +1,9 @@
+"use restrict"
 
-const button = document.getElementById("btnConfirm")
+const button = document.getElementById("btnConfirm");
 const box = document.getElementById("info");
 
+// Essa função busca a letra e faz uma validação de caixa vazia;
 async function getLyric(event){
 
     const song = document.getElementById("songName").value;
@@ -22,6 +24,7 @@ async function getLyric(event){
     }
 }
 
+// Essa função mostra o motivo de erro na tela de maneira simple para o usuario;
 function erro () {
     box.innerHTML=`
         <h1 class='erro'>Musica ou Artista não especificado</h1>
@@ -29,6 +32,7 @@ function erro () {
     `;
 }
 
+// Essa função serve para mostrar a letra da musica na tela;
 function showLyrics(song, artist, lyric){
     box.innerHTML=`
         <div class='titleSong'>
@@ -45,5 +49,6 @@ function showLyrics(song, artist, lyric){
     }
 }
 
+// inicia a busca pela letra ao evento de "click";
 button.addEventListener("click", getLyric);
 
