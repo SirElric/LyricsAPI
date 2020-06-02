@@ -55,8 +55,8 @@ main{
 
     /*function*/
     .informations{
-        width: 1000px;
-        height: 600px;
+        width: 80vw;
+        height: 80vh;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.575);
         border: solid 0.2vh black;
@@ -133,7 +133,7 @@ main{
         padding-left: 10px;
         color: black;
         font: bolder 2vh arial;
-        
+        outline: none;
     }
     ::-webkit-input-placeholder{
         color: grey;
@@ -148,6 +148,7 @@ main{
         font: bolder 2vh arial;
         background-color: skyblue;
         color: white;
+        outline: none;
     }
     .btnConfirm:hover{
         border: solid 2px skyblue;
@@ -156,7 +157,7 @@ main{
         cursor: pointer;
     }
 }
-@media Screen and (max-device-width:780px){
+@media Screen and (max-device-width:1300px){
 
     .informations{
         width: 90vw;
@@ -219,7 +220,7 @@ main{
         font: bolder 3vh arial;
         margin-bottom: 20px;
         text-align: center;
-        
+        outline: none;
     }
     ::-webkit-input-placeholder{
         color: grey;
@@ -234,5 +235,6 @@ main{
         background-color: skyblue;
         color: white;
         margin-bottom: 20px;
+        outline: none;
     }
 }
