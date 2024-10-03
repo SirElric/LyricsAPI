@@ -51,12 +51,10 @@ main{
 }
 
 @media Screen and (min-device-width:1000px){
-    
-
     /*function*/
     .informations{
         width: 80vw;
-        height: 80vh;
+        height: 100%;
         margin: auto;
         background-color: rgba(255, 255, 255, 0.575);
         border: solid 0.2vh black;
@@ -75,12 +73,17 @@ main{
         width: 100%;
         height: 70px;
         margin-bottom: 5px;
-        text-align: center;
         font: bolder 2vh arial;
+    }
+    .titleSong h1{
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
     }
     .info{
         width: 100%;
-        height: 470px;
+        height: 70%;
         margin-bottom: 5px;
         padding-left: 50px;
         padding-right: 50px;
@@ -89,7 +92,7 @@ main{
     }
     .lyrics{
         width: 100%;
-        height: 400px;
+        height: 100%;
         overflow: auto;
         padding: 10px;
         text-align: center;
